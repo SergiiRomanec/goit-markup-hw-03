@@ -4,21 +4,58 @@ body {
     background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-address {
-    font-style: normal;
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
-button {
-    font-family: inherit;
+/*-------------------HEADER-------------------*/
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
 }
 
 .header-logo-first {
@@ -27,8 +64,11 @@ button {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #4d5ae5;
     text-transform: uppercase;
+    color: #4d5ae5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
 
 }
 
@@ -36,11 +76,11 @@ button {
     color: #2e2f42;
 }
 
-.header-navigation {
-    color: #2e2f42;
-    background: #fff;
+.header-navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
-
 
 .header-navigation-link {
     font-weight: 500;
@@ -48,6 +88,9 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 
 .header-navigation-link:hover,
@@ -55,29 +98,36 @@ button {
     color: #404bbf;
 }
 
-.contacts {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
+.contact {
+    font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    align-items:center;
+    gap: 40px;
 }
 
 .contacts-list-link {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 
-.contacts-list-link:hover,
-.contacts-list-link:focus {
+.contacts-list-item .contacts-list-link:hover,
+.contacts-list-item .contacts-list-link:focus {
     color: #404bbf;
 }
 
 .solutions {
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .solution-title {
@@ -88,6 +138,11 @@ button {
     text-align: center;
     color: #fff;
     background: #2e2f42;
+    padding-bottom: 48px;
+    display: block;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .solution-btn {
@@ -97,7 +152,15 @@ button {
     letter-spacing: 0.04em;
     color: #fff;
     background: #4d5ae5;
-    cursor: pointer
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .solution-btn:hover,
@@ -105,6 +168,28 @@ button {
     background: #404bbf;
 }
 
+.adventures-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.adventures-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.adventures-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .adventures-subtitle {
     font-weight: 500;
@@ -112,6 +197,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .adventures-text {
@@ -134,10 +220,34 @@ button {
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 .team-list-item {
-    background-color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: calc((100% - 72px) / 4);
+background-color: #fff;
+ border-radius: 0 0 4px 4px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.people-pro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px 0;
 }
 
 .people {
@@ -146,6 +256,8 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .profession {
@@ -154,6 +266,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: center;
 }
 
 .portfolio-title {
@@ -164,6 +277,26 @@ button {
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 48px 24px;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-item-pro {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
 }
 
 .portfolio-subtitle {
@@ -172,6 +305,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -183,8 +317,9 @@ button {
 }
 
 .footer {
-
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo-first {
@@ -195,6 +330,8 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-logo-second {
@@ -207,4 +344,5 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
