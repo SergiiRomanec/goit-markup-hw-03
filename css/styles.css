@@ -40,11 +40,20 @@ img {
     align-items: center;
 }
 
-.section {
+.adventures {
 padding-top: 120px;
 padding-bottom: 120px;
 }
 
+.team {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.portfolio {
+padding-top: 120px;
+padding-bottom: 120px;
+}
 
 /*-------------------HEADER-------------------*/
 
@@ -192,7 +201,7 @@ padding-bottom: 120px;
     gap: 24px;
 }
 
-.adventures-item {
+.adventures-list-item {
     width: calc((100% - 72px) / 4);
 }
 
