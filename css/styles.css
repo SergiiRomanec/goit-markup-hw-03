@@ -35,8 +35,14 @@ img {
     margin: 0 auto;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
 .section {
-padding: 120px 0 120px;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 
@@ -234,7 +240,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-width: calc((100% - 3 * 24px) / 4);
+width: calc((100% - 72px) / 4);
 background-color: #fff;
  border-radius: 0 0 4px 4px;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -260,7 +266,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 }
 
 .profession {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -308,7 +313,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
 }
 
 .portfolio-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
