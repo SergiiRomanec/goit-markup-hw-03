@@ -70,6 +70,7 @@ padding-bottom: 120px;
 .header-navigation {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 .header-logo-first {
@@ -112,7 +113,7 @@ padding-bottom: 120px;
     color: #404bbf;
 }
 
-.contact {
+.contacts {
     font-style: normal;
     margin-left: auto;
 }
